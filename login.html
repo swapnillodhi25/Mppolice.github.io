@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MP POLICE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+    
+    <!-- fonts links -->
+</head>
+<body>
+
+  <div class="top-navbar">
+
+    <a>
+      <img alt="Police Mail" class="ulimg" data-entity-type="file" data-entity-uuid="" height="100" src="./images/MP12.png" width="99">
+      <p>MADHYA PRADESH POLICE </p></br>
+        <h5>धन्यः अस्मि भारतत्वेन</h5>
+      
+
+    </a>
+
+      
+      <div class="icons">
+           
+
+<a>
+        <img alt="MadhyaPradesh Shasan" class="ulimg" data-entity-type="file" data-entity-uuid="519b0e59-4cbe-4785-bded-d7c54022a1ab"  height ="100"src="./images/Madhya_Pradesh_sashan-home.jpg"width="99">
+      </a>
+      <a>
+        <img alt="Police Mail" class="ulimg" data-entity-type="file" data-entity-uuid="" height="100" src="./images/mp-police-mail.jpg" width="99">
+      </a>
+
+      <a>
+       
+        <img alt="aipdm" class="ulimg" data-entity-type="file" data-entity-uuid="" height="100" src="./images/AIPDM1.png" width="99">
+        
+      </a>
+
+
+          <!--
+          <a href="register.html"><img src="./images/register.png" alt="" width="18px">Register</a> -->
+      </div>
+  </div>
+    <!-- top navbar -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo"><span id="span1">P</span>olice <span>Record</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./images/menu.png" alt="" width="18px"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+
+              <!--
+              <li class="nav-item">
+                <a class="nav-link" href="Rules.html">Rules</a>
+              </li> -->
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    <!-- navbar -->
+    
+
+
+
+
+
+
+    
+   <div class="container" id="login">
+    <div class="row">
+        <div class="col-md-6 py-3 py-md-0" id="side1">
+           
+
+          <center></br><img src="./images/p111.png" width="200px" height="170px"></center>
+            <h3 class="text-center">ADMIN LOGIN</h3>
+            <p class="text-center"></p>
+            <div class="input2 text-center">
+            <input type="name" id="na" placeholder="User Name">
+            <i class="far fa-envelope"></i>
+            <input id="pas" type="password"  placeholder="Password">
+            <i class="fas fa-lock" onclick ="show1()"></i>
+            </div>
+
+            <p    type="submit" onclick="op()"      class="text-center" id="btnlogin"><a>Login</a></p>
+            
+           
+         
+        </div>
+
+        <script>
+          function show1(){
+            var pswrd=document.getElementById('pas');
+            var icon =document.querySelector('.fas');
+            if(pswrd.type=="password"){
+              pswrd.type ="text";
+              //pswrd.style.marginTop ="20px";
+         
+            }
+      
+            else{
+      
+      pswrd.type ="password";
+   
+      }
+            }
+           
+          
+         </script>
+
+<script>
+  function op(){
+    var usname=document.getElementById("na").value;
+    var uspas=document.getElementById("pas").value;
+    if(usname=="Admin" && uspas=="Police"){
+    window.location="adminwork.html";}
+    
+    
+    else{
+      alert("invalid information");
+    }
+  }
+</script>
+
+
+
+
+
+<div class="col-md-7 py-1 py-md-0" id="side2">
+  <center></br><img src="./images/login1.png" width="210px" height="180px"></center>
+  <h3 class="text-center">STAFF LOGIN</h3>
+  <p class="text-center"></p>
+  <div class="input2 text-center">
+    <form action="login1.php" method="post">
+  <input type="text" placeholder="Police ID" name ="police_id">
+  <i class="far fa-envelope"></i>
+  <input type="text" id="pa" placeholder="Password" name="pass">
+  <i class="fas fa-lock" onclick ="show2()"></i>
+
+  </div>
+
+
+  
+</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input class="text-center" id="btn1" type="submit" name="save" value="Login"/>
+ 
+
+ 
+</div>
+
+
+
+
+<script>
+  function show2(){
+    var pswrd=document.getElementById('pa');
+    var icon =document.querySelector('.fas');
+    if(pswrd.type=="password"){
+      pswrd.type ="text";
+      pswrd.style.marginTop ="16px";
+      icon.style.color ="#7f2092";
+    }
+
+    else{
+
+pswrd.type ="password";
+
+}
+    }
+   
+  
+ </script>
+</form>
+
+    </div>
+
+
+
+
+
+   </div>
+  
+     
+    
+   </script>
+
+
+
+
+  
+    <!-- newslater -->
+    <!--<div class="container" id="newslater" style="margin-top: 100px;">
+      <h3 class="text-center">Subscribe To The Electronic Shop For Latest upload.</h3>
+      <div class="input text-center">
+        <input type="text" placeholder="Enter Your Email..">
+        <button id="subscribe">SUBSCRIBE</button>
+      </div>
+    </div> /-->
+    <!-- newslater -->
+    
+
+
+
+
+
+  
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Police Record </h4>
+              <p>
+                MP Police <br>
+              
+              </p>
+              <strong>Phone number:</strong> 100 <br>
+              <strong>Website :</strong> dgpmp@mppolice.gov.in.<br>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Usefull Links</h4>
+             <ul>
+              <li><a href="index.html">Home</a></li>
+             
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              
+             </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+
+             <ul>
+              <li><a href="#">Duty Details</a></li>
+              <li><a href="#">Posting Details</a></li>
+              <li><a href="#">Transfer Details</a></
+             </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Connect our Social Network .</p>
+
+              <div class="socail-links mt-3">
+                <a href="https://twitter.com/mppolicedeptt?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/MPPoliceDeptt/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/mp_police_official/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                
+                <a href="https://in.linkedin.com/company/mppolice"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Police Record</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">Force Team</a>
+        </div>
+      </div>
+
+     
+    </footer>
+    <!-- footer -->
+
+
+
+
+
+
+
+    <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

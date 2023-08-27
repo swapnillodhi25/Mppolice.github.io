@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP POLICE </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+</head>
+<body>
+  <div class="top-navbar">
+
+    <a>
+      <img alt="Police Mail" class="ulimg" data-entity-type="file" data-entity-uuid="" height="100" src="./images/MP12.png" width="99">
+      <p>MADHYA PRADESH POLICE </p></br>
+        <h5>धन्यः अस्मि भारतत्वेन</h5>
+      
+
+    </a>
+
+      
+      <div class="icons">
+           
+
+<a>
+        <img alt="MadhyaPradesh Shasan" class="ulimg" data-entity-type="file" data-entity-uuid="519b0e59-4cbe-4785-bded-d7c54022a1ab"  height ="100"src="./images/Madhya_Pradesh_sashan-home.jpg"width="99">
+      </a>
+      <a>
+        <img alt="Police Mail" class="ulimg" data-entity-type="file" data-entity-uuid="" height="100" src="./images/mp-police-mail.jpg" width="99">
+      </a>
+
+      <a>
+       
+        <img alt="aipdm" class="ulimg" data-entity-type="file" data-entity-uuid="" height="100" src="./images/AIPDM1.png" width="99">
+        
+      </a>
+
+
+          <!--
+          <a href="register.html"><img src="./images/register.png" alt="" width="18px">Register</a> -->
+      </div>
+  </div>
+    <!-- top navbar -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo"><span id="span1">P</span>olice <span>Record</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./images/menu.png" alt="" width="30px"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rules</a>
+              </li> 
+
+            -->
+              
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact </a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    
+
+
+      <!--Contact Us-->
+      <div class="container" id="contact">
+
+    <br/>
+    <h1 class="text-center">Contact Us </h1><br />
+    
+    <div class="row">
+      <div class="col-md-8">
+          <form action="contactus.php" method="post">
+            <input class="form-control" name="Name" placeholder="Name..." /><br />
+            <input class="form-control" name="Phone" type="number" maxlength="10" placeholder="Phone..." /><br />
+            <input class="form-control" name="Email" placeholder="E-mail..." /><br />
+            <textarea class="form-control" name="Text" placeholder="How can we help you?" style="height:150px;  "></textarea><br /><br />
+            <input class="col-md-3" id="send" type="submit" value= " Submit " style="font-size: 20px; width: 75px;  " /><br /> <br />
+          </form>
+      </div>
+      <div class="col-md-4">
+       <!-- <b>Police service:</b> <br />
+        Phone: 100<br />
+        E-mail: <a href="mailto:support@mysite.com">support@mysite.com</a><br />
+        <br /><br />
+       -->
+        <b>Police Headquarter:</b><br />
+        Jail Rd, Jahangirabad,  <br />
+       Bhopal,<br />
+       Madhya Pradesh 462004<br />
+       <!-- Phone: https://www.google.com/search?q=mp%20police%20headquarters%20location&sxsrf=APwXEdcsHx9X3zxXw4xVwe6FfKVkBQ_L5A:1680757993105&ei=KkstZLOtK4yeseMPhemTmAU&ved=2ahUKEwiPl4e5v5T-AhU1UGwGHYdiAgYQvS56BAgLEAE&uact=5&oq=mp+police+headquarter+location&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCEQoAEQCjIHCCEQoAEQCjIHCCEQoAEQCjIFCCEQkgMyBQghEJIDMgUIIRCSAzIFCCEQkgMyBQghEJIDMgUIIRCSAzoKCAAQRxDWBBCwAzoECCEQFToECCMQJzoGCAAQFhAeOggIABCKBRCGAzoCCCY6CwguEIAEEMcBEK8BOgUIABCABDoICAAQigUQkQI6BwgjELACECc6DQguEIAEEA0QxwEQrwE6BwgAEIAEEA06CAghEBYQHhAdSgQIQRgAUNgYWLhYYKpcaAFwAXgBgAG6AogBviiSAQgwLjYuMTMuM5gBAKABAcgBCMABAQ&sclient=gws-wiz-serp&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=13184731139149923035&lqi=Ch9tcCBwb2xpY2UgaGVhZHF1YXJ0ZXJzIGxvY2F0aW9uSNvdzJeYgoCACFooEAEQAhgAGAEYAiIWbXAgcG9saWNlIGhlYWRxdWFydGVycyoECAMQAZIBDHN0YXRlX3BvbGljZZoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VRd2JHRnlkVGxSUlJBQqoBPBABKhciE3BvbGljZSBoZWFkcXVhcnRlcnMoADIfEAEiG9YIoioAUtFsR6W1T1WAyiBGvj1a0eaC9TA_0Q&sa=X&rlst=f#<br />
+       -->
+       Phone:   <a href="https://www.google.com/search?q=mp%20police%20headquarters%20location&sxsrf=APwXEdcsHx9X3zxXw4xVwe6FfKVkBQ_L5A:1680757993105&ei=KkstZLOtK4yeseMPhemTmAU&ved=2ahUKEwiPl4e5v5T-AhU1UGwGHYdiAgYQvS56BAgLEAE&uact=5&oq=mp+police+headquarter+location&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCEQoAEQCjIHCCEQoAEQCjIHCCEQoAEQCjIFCCEQkgMyBQghEJIDMgUIIRCSAzIFCCEQkgMyBQghEJIDMgUIIRCSAzoKCAAQRxDWBBCwAzoECCEQFToECCMQJzoGCAAQFhAeOggIABCKBRCGAzoCCCY6CwguEIAEEMcBEK8BOgUIABCABDoICAAQigUQkQI6BwgjELACECc6DQguEIAEEA0QxwEQrwE6BwgAEIAEEA06CAghEBYQHhAdSgQIQRgAUNgYWLhYYKpcaAFwAXgBgAG6AogBviiSAQgwLjYuMTMuM5gBAKABAcgBCMABAQ&sclient=gws-wiz-serp&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=13184731139149923035&lqi=Ch9tcCBwb2xpY2UgaGVhZHF1YXJ0ZXJzIGxvY2F0aW9uSNvdzJeYgoCACFooEAEQAhgAGAEYAiIWbXAgcG9saWNlIGhlYWRxdWFydGVycyoECAMQAZIBDHN0YXRlX3BvbGljZZoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VRd2JHRnlkVGxSUlJBQqoBPBABKhciE3BvbGljZSBoZWFkcXVhcnRlcnMoADIfEAEiG9YIoioAUtFsR6W1T1WAyiBGvj1a0eaC9TA_0Q&sa=X&rlst=f#"> 0755 244 3655</a>
+       </br>
+       E-mail:  <a href="addlpc.Hq.bhopal@mppolice.gov.in">addlpc.Hq.bhopal@mppolice.gov.in</a><br />
+      </br></br>
+    
+       
+
+
+        <b>Governing body:</b><br />
+        Home Department of Madhya Pradesh, <br />
+        
+        H-50, 74 Bunglow, Link Rd 1, Nishat Colony, Arera Hills, Bhopal,<br />
+        Madhya Pradesh 462003,</br> India</br>
+        Fax Number: 0755-2441684<br />
+        Telephone:  0755-2443898</br>
+       E-mail: <a href="https://mail.gov.in ">https://mail.gov.in </a><br />
+    
+    
+      </div>
+    </div>
+    
+    </div>
+      </div>
+
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Police Record </h4>
+              <p>
+                MP Police <br>
+              
+              </p>
+              <strong>Phone number:</strong> 100 <br>
+              <strong>Website :</strong> dgpmp@mppolice.gov.in.<br>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Usefull Links</h4>
+             <ul>
+              <li><a href="index.html">Home</a></li>
+             
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              
+             </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+
+             <ul>
+              <li><a href="#">Duty Details</a></li>
+              <li><a href="#">Posting Details</a></li>
+              <li><a href="#">Transfer Details</a></
+             </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Connect our Social Network .</p>
+
+              <div class="socail-links mt-3">
+                <a href="https://twitter.com/mppolicedeptt?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/MPPoliceDeptt/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/mp_police_official/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                
+                <a href="https://in.linkedin.com/company/mppolice"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Police Record</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">Force Team</a>
+        </div>
+      </div>
+
+     
+    </footer>
+    <!-- footer -->
+
+
+
+    <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
